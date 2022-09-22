@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+:root {
+	--purpleColorLighter: #A42DE8;
+	--blueColorLighter: #318AFF;
+	--blueColorDarker: #2D3DE8;
+	--bgColor: #ffffff;
+	--fgColor: #800080;
+	--fgColorLighter: rgba(128,0,128,0.5);
+	--headerTextColor: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bgColor: #422142;
+		--fgColor: #f0c4f0;
+		--fgColorLighter: rgba(210,169,210,0.5);
+		--headerTextColor: var(--fgColor);
+	}
+}
+
+h1{
+    font-family: DynaPuff;
+}
+
+h2{
+    font-family: DynaPuff;
+}

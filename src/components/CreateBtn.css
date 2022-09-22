@@ -1,0 +1,24 @@
+@import url('./Style.css');
+
+.create-sample{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 2px solid var(--fgColorLighter);
+    align-items: center;
+    font-family: Ubuntu;
+}
+
+.create-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: var(--headerTextColor);
+    border: 1px solid var(--bgColor);
+    color: var(--bgColor);
+}
+
+.create-button:hover{
+    background-color: var(--fgColorLighter);
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+@import url('./Style.css');
+
+body {
+    margin: 0;
+    background-color: var(--bgColor);
+    color: var(--headerTextColor)
+}
+
+main {
+    margin: 16px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, var(--purpleColorLighter), var(--blueColorDarker));
+    color: white;
+}
+
+.navbar-title {
+    margin-right: auto;
+    font-size: 200%;
+    padding: 12px 16px;
+    font-family: DynaPuff;
+}
+
+.navbar-item {
+    padding: 16px 16px;
+    cursor: pointer;
+    vertical-align: middle;
+    font-family: Ubuntu;
+    font-size:16px;
+}

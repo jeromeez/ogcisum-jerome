@@ -1,0 +1,56 @@
+@import url('./Style.css');
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 2px solid var(--fgColorLighter);
+    margin-bottom: 2rem;
+}
+
+.card-date{
+    font-family: Ubuntu;
+    color:var(--fgColorLighter);
+}
+
+.buttons{
+    align-items: center;
+    font-family: Ubuntu;
+}
+
+.card-button{
+    padding-top: 2rem;
+    display: flex;
+    justify-items: space-between;
+}
+
+.btn-share{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border: 1px solid var(--fgColorLighter);
+    cursor: pointer;
+}
+
+.btn-preview{
+    margin-left: 5px;
+    margin-right:5px;
+    padding: 5px;
+    border: 1px solid var(--fgColorLighter);
+    cursor: pointer;
+}
+
+.btn-edit{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: var(--headerTextColor);
+    border: 1px solid var(--bgColor);
+    color: var(--bgColor);
+}
+
+.btn-edit:hover{
+    background-color: var(--fgColorLighter);
+    cursor: pointer;
+}
+
