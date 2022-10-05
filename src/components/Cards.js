@@ -1,3 +1,9 @@
+/*
+---------------------------------
+Javascript code for creating cards
+---------------------------------
+*/
+
 import React from "react";
 import "./Cards.css";
 

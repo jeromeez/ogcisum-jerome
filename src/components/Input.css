@@ -1,0 +1,50 @@
+@import url('./Style.css');
+
+.input-wrap{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 2px solid var(--fgColorLighter);
+    align-items: center;
+    border-bottom-width: 6px;
+    margin-bottom: 5%;
+}
+
+.input-field{
+    background-color: var(--fgColor);
+    width: 70%;
+    height: 3rem;
+    border: none;
+    font-family: DynaPuff;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.buttons{
+    display: flex;
+}
+.preview-btn{
+    font-family: Ubuntu;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid var(--fgColor);
+    cursor: pointer;
+}
+
+.save-btn{
+    font-family: Ubuntu;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    background-color: var(--fgColor);
+    color: var(--bgColor);
+    border: 2px solid var(--fgColor);
+}
