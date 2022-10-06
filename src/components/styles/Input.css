@@ -7,17 +7,17 @@
     border: 2px solid var(--fgColorLighter);
     align-items: center;
     border-bottom-width: 6px;
-    margin-bottom: 5%;
 }
 
 .input-field{
-    background-color: var(--fgColor);
+    background-color: var(--fgColorLighter);
     width: 70%;
     height: 3rem;
     border: none;
     font-family: DynaPuff;
     font-size: 20px;
     border-radius: 10px;
+    color: var(--fgColor);
 }
 
 .buttons{

@@ -1,5 +1,5 @@
 import React from "react";
-import "./CreateBtn.css";
+import "./styles/CreateBtn.css";
 
 export default function CreateBtn() {
   return (

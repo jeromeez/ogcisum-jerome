@@ -20,6 +20,10 @@
     color:var(--fgColorLighter);
 }
 
+.editLink{
+    text-decoration: none;
+}
+
 /* 
  *--------------------------
  * Styling - Buttons
@@ -32,7 +36,6 @@
 }
 
 .card-button{
-    padding-top: 2rem;
     display: flex;
     justify-items: space-between;
     color: var(--fgColor);

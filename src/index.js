@@ -3,13 +3,25 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./pages/App";
 import EditSample from "./pages/EditSample";
+import ShareSample from "./pages/ShareSample";
+import { toneObject, toneTransport, tonePart } from "./data/instruments.js";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/editsample" element={<EditSample />} />
+        <Route
+          path="/editsample"
+          element={
+            <EditSample
+              toneObject={toneObject}
+              toneTransport={toneTransport}
+              tonePart={tonePart}
+            />
+          }
+        />
+        <Route path="/sharesample" element={<ShareSample />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

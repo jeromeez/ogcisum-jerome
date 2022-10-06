@@ -1,0 +1,43 @@
+@import url('./Style.css');
+
+/* CSS for Edit Sample Page */
+
+.tableType{
+    display: flex;
+    padding: 2rem;
+    font-family: Ubuntu;
+    align-items: center;
+    width: 100%;
+}
+
+.Type{
+    padding: 1rem;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.PianoType{
+    padding: 1rem 6rem;
+    border: 2px solid var(--fgColorLighter);
+    border-bottom-width: 6px;
+}
+
+.FrenchType{
+    padding: 1rem 6rem;
+    border: 2px solid var(--fgColorLighter);
+    border-bottom-width: 6px;
+}
+
+
+.GuitarType{
+    padding: 1rem 6rem;
+    border: 2px solid var(--fgColorLighter);
+    border-bottom-width: 6px;
+}
+
+
+.DrumsType{
+    padding: 1rem 6rem;
+    border: 2px solid var(--fgColorLighter);
+    border-bottom-width: 6px;
+}

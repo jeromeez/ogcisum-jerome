@@ -1,15 +1,17 @@
-/**
- * Code that creates cards component
+/*
+ * Code that creates header component
  */
 
 import React from "react";
-// import { Link } from "react-router-dom";
-import "./Header.css";
+import { Link } from "react-router-dom";
+import "./styles/Header.css";
 
 export default function Header() {
   return (
     <header className="navbar">
-      <div className="navbar-title">OgCiSum</div>
+      <Link to="/" className="navbar-title">
+        OgCiSum
+      </Link>
       <p className="navbar-item">
         Create & Share Samples, Listen in Mobile App!
       </p>

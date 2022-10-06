@@ -1,24 +1,51 @@
+import React from "react";
+import "./styles/Cards.css";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 /*
 ---------------------------------
 Javascript code for creating cards
 ---------------------------------
 */
 
-import React from "react";
-import "./Cards.css";
-
 export default function Cards() {
+  const initialSample = "Loading sample...";
+  const [sampleName, setName] = useState(initialSample);
+  const [sampleDate, setDate] = useState(initialSample);
+
+  useEffect(() => {
+    getName();
+  }, []);
+
+  async function getName() {
+    const response = await fetch(
+      "http://wmp.interaction.courses/api/v1/?apiKey=NQrs4GBt&mode=read&endpoint=samples"
+    );
+    const json = await response.json();
+    const sampleName = json.samples[0].name;
+    const sampleDate = json.samples[0].datetime;
+
+    // let time = sampleDate.substr(11, 14);
+    console.log(sampleName);
+    // console.log(time);
+    setName(sampleName);
+    setDate(sampleDate);
+  }
+
   return (
     <div className="card">
       <div className="title">
-        <h2 className="card-title">Hellz Wind Staff</h2>
-        <p className="card-date">6:40pm on 25 August 2022</p>
+        <h2 className="card-title">{sampleName}</h2>
+        <p className="card-date">{sampleDate} </p>
       </div>
       <div className="buttons">
         <div className="card-button">
-          <div className="btn-share">Shared</div>
+          <div className="btn-share">Share</div>
           <div className="btn-preview">Preview</div>
-          <div className="btn-edit">Edit</div>
+          <Link to={`/editsample`} className="editLink">
+            <div className="btn-edit">Edit</div>
+          </Link>
         </div>
       </div>
     </div>
