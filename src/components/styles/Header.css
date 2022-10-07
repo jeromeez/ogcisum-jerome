@@ -1,5 +1,11 @@
 @import url('./Style.css');
 
+/* 
+ *--------------------------
+ * Styling - Header (Navbar)
+ *--------------------------
+*/
+
 body {
     margin: 0;
     background-color: var(--bgColor);

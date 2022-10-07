@@ -1,5 +1,11 @@
 @import url('./Style.css');
 
+/* 
+ *--------------------------
+ * Styling - Create Button
+ *--------------------------
+*/
+
 .create-sample{
     display: flex;
     justify-content: space-around;
@@ -16,6 +22,7 @@
     background-color: var(--headerTextColor);
     border: 1px solid var(--bgColor);
     color: var(--bgColor);
+    text-decoration: none;
 }
 
 .create-button:hover{

@@ -1,22 +1,29 @@
 @import url('./Style.css');
 
-/* CSS for Edit Sample Page */
+/* 
+ *--------------------------
+ * CSS - Edit Sample Page
+ *--------------------------
+*/
 
 .tableType{
-    display: flex;
+    display: grid;
+    font-size: 16px;
+    align-items: center;
     padding: 2rem;
     font-family: Ubuntu;
-    align-items: center;
-    width: 100%;
+    grid-template-columns: 1fr 4fr 4fr 4fr 4fr;
+    width: 98%;
 }
 
 .Type{
-    padding: 1rem;
+    padding:1.5rem;
     align-items: center;
     margin-right: 10px;
 }
 
 .PianoType{
+    align-items: center;
     padding: 1rem 6rem;
     border: 2px solid var(--fgColorLighter);
     border-bottom-width: 6px;
@@ -35,9 +42,91 @@
     border-bottom-width: 6px;
 }
 
+.sequence-row{
+    font-family: Ubuntu;
+}
 
 .DrumsType{
     padding: 1rem 6rem;
     border: 2px solid var(--fgColorLighter);
     border-bottom-width: 6px;
+}
+
+.First-Row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16fr;
+    margin-bottom: 1em;
+}
+
+.Second-Row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16fr;
+    margin-bottom: 1em;
+}
+
+.Third-Row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16fr;
+    margin-bottom: 1em;
+}
+
+.Fourth-Row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16fr;
+    margin-bottom: 1em;
+}
+
+.Fifth-Row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16fr;
+    margin-bottom: 1em;
+}
+
+.Sixth-Row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16fr;
+    margin-bottom: 1em;
+}
+
+.Seventh-Row{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16fr;
+    margin-bottom: 1em;
+}
+
+.bNote{
+    justify-content: center;
+}
+
+/* Music */
+
+.sequencer {
+	border: 2px solid var(--fgColorLighter);
+	display: flex;
+	overflow: auto;
+}
+
+.sequencer > .bar {
+	border: 1px solid var(--fgColorLighter);
+	width: 100%;
+	padding: 1.5em 0.25em;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sequencer > .bar:hover {
+	background: var(--fgColor);
+}
+
+.sequencer > .bar.selected {
+	background: var(--fgColor);
+	color: var(--fgColorLighter);
+	font-weight: bold;
 }

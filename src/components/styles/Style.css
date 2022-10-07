@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
+/* 
+ *--------------------------
+ * Global CSS - Styling Guide 
+ *--------------------------
+*/
+
 :root {
 	--purpleColorLighter: #A42DE8;
 	--blueColorLighter: #318AFF;
@@ -23,30 +29,4 @@
 h2{
     font-family: DynaPuff;
     color: var(--fgColor);
-}
-
-/* Music */
-
-.sequencer {
-	border: 2px solid var(--fgColorLighter);
-	display: flex;
-	overflow: auto;
-}
-
-.sequencer > .bar {
-	border: 1px solid var(--fgColorLighter);
-	width: 100%;
-	padding: 1.5em 0.25em;
-	text-align: center;
-	cursor: pointer;
-}
-
-.sequencer > .bar:hover {
-	background: var(--fgColor);
-}
-
-.sequencer > .bar.selected {
-	background: var(--fgColor);
-	color: var(--fgColorLighter);
-	font-weight: bold;
 }

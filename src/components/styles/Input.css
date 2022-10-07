@@ -1,5 +1,11 @@
 @import url('./Style.css');
 
+/* 
+ *--------------------------
+ * Styling - Input Field
+ *--------------------------
+*/
+
 .input-wrap{
     display: flex;
     justify-content: space-around;
