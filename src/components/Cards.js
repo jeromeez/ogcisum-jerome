@@ -3,9 +3,9 @@ import "./styles/Cards.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-/* ...
- * @component
- * @property {samples} returns in a card component.
+/**
+ * This function will return in a card component
+ * @param {String} samples - The selected ID in the API
  */
 export default function Cards({ samples }) {
   const [shared, setShare] = useState(false);

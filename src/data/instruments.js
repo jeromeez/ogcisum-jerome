@@ -10,6 +10,12 @@ export const tonePart = new toneObject.Part((time, note) => {
   guitar.triggerAttackRelease(note, "8n", time);
 }, []).start(0);
 
+/*
+ *----------------------------------------------------
+ * JS - Assigning each instruments to their specific note
+ *----------------------------------------------------
+ */
+
 export const guitar = new toneObject.Sampler({
   urls: {
     F3: "F3.mp3",

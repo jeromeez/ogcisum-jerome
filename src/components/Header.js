@@ -1,5 +1,5 @@
-/*
- * Code that creates header component
+/**
+ * This function act as a component for the header
  */
 
 import React from "react";

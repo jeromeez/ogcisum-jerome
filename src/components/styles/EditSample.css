@@ -16,6 +16,12 @@
     width: 98%;
 }
 
+/* 
+ *--------------------------
+ *  Style each note sequencer
+ *--------------------------
+*/
+
 .Type{
     padding:1.5rem;
     align-items: center;
@@ -34,7 +40,6 @@
     border: 2px solid var(--fgColorLighter);
     border-bottom-width: 6px;
 }
-
 
 .GuitarType{
     padding: 1rem 6rem;
@@ -105,7 +110,11 @@
     justify-content: center;
 }
 
-/* Music */
+/* 
+ *--------------------------
+ * Music Sequencer
+ *--------------------------
+*/
 
 .sequencer {
 	border: 2px solid var(--fgColorLighter);

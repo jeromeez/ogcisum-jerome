@@ -23,7 +23,6 @@ export default function App() {
           <Cards samples={dat} />
         ))}
       </div>
-      {/* <Cards></Cards> */}
       <CreateBtn></CreateBtn>
     </Template>
   );

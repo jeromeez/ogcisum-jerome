@@ -5,6 +5,13 @@ import "../components/styles/EditSample.css";
 import Sequencer from "../components/Sequencer";
 import { useState, useEffect } from "react";
 
+/**
+ * This function works to create the sample by using UseState
+ * @param {String} toneObject - Item needed for the sequencer
+ * @param {String} toneTransport - Item needed for the sequencer
+ * @param {String} tonePart - Item needed for the sequencer
+ */
+
 export default function CreateSample({ toneObject, toneTransport, tonePart }) {
   const [instrument, setInstrument] = useState("piano");
   const [name, setName] = useState("");
